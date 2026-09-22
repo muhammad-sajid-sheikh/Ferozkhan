@@ -14,9 +14,9 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe | Politician Portfolio",
+  title: "Muhammad Feroz khan | Politician Portfolio",
   description:
-    "Official portfolio website of John Doe (Demo/Placeholder) — showcasing profile, projects, and contact information.",
+    "Official portfolio website of Muhammad Feroz Khan (Demo/Placeholder) — showcasing profile, projects, and contact information.",
 };
 
 export default function RootLayout({

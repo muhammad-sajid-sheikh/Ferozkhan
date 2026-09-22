@@ -1,11 +1,11 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const contactDetails = [
-  { label: "Email", value: "contact@johndoe-demo.com", icon: Mail },
+  { label: "Email", value: "mferozkhan.com", icon: Mail },
   { label: "Phone", value: "+92 300 1234567", icon: Phone },
   {
     label: "Office address",
-    value: "123 Demo Street, Sample City",
+    value: "karachi",
     icon: MapPin,
   },
 ];

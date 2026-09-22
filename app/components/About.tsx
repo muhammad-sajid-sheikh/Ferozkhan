@@ -55,7 +55,7 @@ export default function About() {
             </h2>
 
             <p className="mt-5 leading-relaxed text-[#4B5D53]">
-              John Doe has spent over a decade working closely with local
+              M feroz khan has spent over a decade working closely with local
               communities to drive positive change. With a strong focus on
               transparency, education, and infrastructure, John believes in
               leadership that listens first and acts with integrity.

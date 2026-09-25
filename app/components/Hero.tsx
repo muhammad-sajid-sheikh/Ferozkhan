@@ -1,4 +1,5 @@
 import Image from "next/image";
+import JoinUsDialog from "./JoinUsDialog";
 
 /** Simple crescent & star mark — reuse the same one from Navbar.tsx if you'd
  *  rather keep a single shared component at e.g. components/EmblemMark.tsx */
@@ -28,7 +29,7 @@ export default function Hero() {
     >
       {/* Background watermark — a single deliberate decorative moment
       <EmblemMark className="pointer-events-none absolute -right-24 -top-24 h-105 w-105 text-[#01411C]/4 sm:-right-16 sm:-top-16" /> */}
- <div className="absolute inset-0 z-0">
+ <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
           src="/images/pic7.jpeg"
           alt=""
@@ -58,20 +59,24 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
-            <a
-              href="#projects"
-              className="rounded-sm bg-[#C89B3C] px-7 py-3 text-center text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
-            >
-              View Projects
-            </a>
+           
+            {/* Buttons */}
 
-            <a
-              href="#contact"
-              className="rounded-sm border border-[#01411C] px-7 py-3 text-center text-sm font-semibold text-[#01411C] transition-colors hover:bg-[#01411C] hover:text-white"
-            >
-              Contact Me
-            </a>
-          </div>
+    <button
+      type="button"
+      className="rounded-sm bg-[#C89B3C] px-7 py-3 text-center text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
+    >
+      Join Us
+    </button>
+
+
+  <a
+    href="#contact"
+    className="rounded-sm bg-[#C89B3C] px-7 py-3 text-center text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
+  >
+    Contact Me
+  </a>
+</div>
         </div>
 
         {/* Portrait frame */}

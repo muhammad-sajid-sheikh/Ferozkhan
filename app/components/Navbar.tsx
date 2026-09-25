@@ -9,6 +9,7 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
+import JoinUsDialog from "@/app/components/JoinUsDialog";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -159,14 +160,16 @@ export default function Navbar() {
           </ul>
 
           {/* Join Us - Desktop */}
-          <div className="hidden md:block">
-            <a
-              href="#join"
-              className="rounded-sm bg-[#C89B3C] px-5 py-2 text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
-            >
-              Join Us
-            </a>
-          </div>
+         <div className="hidden md:block">
+  
+    <button
+      type="button"
+      className="rounded-sm bg-[#C89B3C] px-5 py-2 text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
+    >
+      Join Us
+    </button>
+ 
+</div>
 
           {/* Mobile Menu */}
           <div className="md:hidden">
@@ -230,6 +233,14 @@ export default function Navbar() {
                     </li>
                   ))}
                 </ul>
+                <JoinUsDialog>
+  <button
+    type="button"
+    className="block w-full rounded-sm bg-[#C89B3C] px-5 py-2.5 text-center text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
+  >
+    Join Us
+  </button>
+</JoinUsDialog>
 
                 {/* Mobile Join + Social */}
                 <div className="mt-auto px-4 pb-6">

@@ -10,6 +10,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import JoinUsDialog from "@/app/components/JoinUsDialog";
+import Link from "next/link";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -161,13 +162,16 @@ export default function Navbar() {
 
           {/* Join Us - Desktop */}
          <div className="hidden md:block">
+  <JoinUsDialog>
+      <button
+    type="button"
   
-    <button
-      type="button"
-      className="rounded-sm bg-[#C89B3C] px-5 py-2 text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
-    >
-      Join Us
-    </button>
+    className="block w-full rounded-sm bg-[#C89B3C] px-5 py-2.5 text-center text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
+  >
+    Join Us
+  </button>
+   </JoinUsDialog>
+ 
  
 </div>
 
@@ -234,13 +238,17 @@ export default function Navbar() {
                   ))}
                 </ul>
                 <JoinUsDialog>
+             
   <button
     type="button"
+  
     className="block w-full rounded-sm bg-[#C89B3C] px-5 py-2.5 text-center text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
   >
     Join Us
   </button>
-</JoinUsDialog>
+   </JoinUsDialog>
+ 
+
 
                 {/* Mobile Join + Social */}
                 <div className="mt-auto px-4 pb-6">

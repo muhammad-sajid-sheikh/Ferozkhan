@@ -1,5 +1,6 @@
 import Image from "next/image";
 import JoinUsDialog from "./JoinUsDialog";
+import Link from "next/link";
 
 /** Simple crescent & star mark — reuse the same one from Navbar.tsx if you'd
  *  rather keep a single shared component at e.g. components/EmblemMark.tsx */
@@ -61,15 +62,15 @@ export default function Hero() {
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
            
             {/* Buttons */}
-
+  <JoinUsDialog>
     <button
       type="button"
       className="rounded-sm bg-[#C89B3C] px-7 py-3 text-center text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
     >
       Join Us
     </button>
-
-
+  
+</JoinUsDialog>
   <a
     href="#contact"
     className="rounded-sm bg-[#C89B3C] px-7 py-3 text-center text-sm font-semibold text-[#012A12] transition-colors hover:bg-[#dbb257]"
